@@ -233,8 +233,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👨‍💻 Autor
 
-## **Júlio César Nunes Oliveira - RM557774 2TDSFPF** - [GitHub](https://github.com/jubshereman)
+### **Júlio César Nunes Oliveira - RM557774 2TDSFPF** - [GitHub](https://github.com/jubshereman)
 
-## **Erik Paschoalatto dos Santos - RM554854 2TDSFPF** - [GitHub](https://github.com/ozerikoz)
+### **Erik Paschoalatto dos Santos - RM554854 2TDSFPF** - [GitHub](https://github.com/ozerikoz)
 
-## **Nathan Magno Gustavo Consolo - RM558987 2TDSFPF** - [GitHub](https://github.com/NathanMagno)
+### **Nathan Magno Gustavo Consolo - RM558987 2TDSFPF** - [GitHub](https://github.com/NathanMagno)
