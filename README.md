@@ -53,15 +53,18 @@ Após rodar o projeto, a API estará disponível em:
 ```
 http://localhost:5114
 ```
-
 Você pode testar os endpoints diretamente pelo Swagger ou usando ferramentas como Postman, Insomnia ou curl.
 
+Para acessar a API em produção:
 ```
-http://localhost:5114/admin
+http://52.226.130.48:8081
 ```
 
 Para acessar as Razor pages
 
+```
+http://localhost:5114/admin
+```
 ---
 
 ## 🧪 Exemplos de Teste
