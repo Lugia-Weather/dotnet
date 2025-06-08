@@ -1,0 +1,63 @@
+# Ignore build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Rider/JetBrains
+.idea/
+*.DotSettings
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.vspscc
+*.vssscc
+
+# VS Code
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.log
+*.tlog
+*.cache
+*.pdb
+*.dbmdl
+*.bak
+*.tmp
+
+# Entity Framework
+Migrations/obj/
+
+# Local test results
+TestResults/
+
+# NUGET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+.nuget/
+
+# Static files cache
+wwwroot/dist/
+
+# Publish output
+publish/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# App settings (keep only main)
+appsettings.*.json
+!appsettings.json
