@@ -1,0 +1,45 @@
+@page "/endereco/buscar-por-coordenadas"
+@using System.Text.Encodings.Web
+@using System.Text.Json
+@model lugiaweather_api.Pages.Endereco.TestarEnderecoModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="form-container">
+    <h2>Buscar endereço por coordenadas</h2>
+
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Latitude">Latitude</label>
+            <input asp-for="Latitude" />
+            <span asp-validation-for="Latitude" class="field-error"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Longitude">Longitude</label>
+            <input asp-for="Longitude" />
+            <span asp-validation-for="Longitude" class="field-error"></span>
+        </div>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.MensagemErro))
+    {
+        <div class="error-box">
+            <strong>Erro:</strong> @Model.MensagemErro
+        </div>
+    }
+    else if (Model.Endereco != null)
+    {
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        };
+
+        <div class="success-box" style="margin-top: 16px">
+            <strong>Endereço encontrado:</strong>
+            <pre>@JsonSerializer.Serialize(Model.Endereco, options)</pre>
+        </div>
+    }
+</div>
