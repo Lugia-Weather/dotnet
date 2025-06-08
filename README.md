@@ -19,8 +19,8 @@ A LugiaWeather API oferece endpoints para:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/Lugia-Weather/.net.git
-   cd .net/lugiaweather-api
+   git clone https://github.com/Lugia-Weather/dotnet.git
+   cd dotnet/lugiaweather-api
    ```
 
 2. Restaure os pacotes e compile:
