@@ -30,4 +30,4 @@ USER appuser
 EXPOSE 80
 
 #Executa a aplicação
-ENTRYPOINT ["dotnet", "Lugiaweather-api.dll"]
+ENTRYPOINT ["dotnet", "lugiaweather-api.dll"]
