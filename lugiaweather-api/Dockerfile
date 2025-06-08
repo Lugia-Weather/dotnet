@@ -18,7 +18,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 #Garante que a aplicação escute na porta 80
-ENV ASPNETCORE_HTTP_PORTS=80
+ENV ASPNETCORE_URLS=http://+:80
 
 #Cria um usuário não-root por segurança
 RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
