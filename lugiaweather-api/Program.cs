@@ -6,19 +6,15 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔧 Services
-
 // Oracle DB
 builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseOracle(builder.Configuration.GetConnectionString("OracleDb"))
-            .LogTo(Console.WriteLine, LogLevel.Information) // Log no terminal
-            .EnableSensitiveDataLogging()                   // Mostra valores dos parâmetros
 );
 
 // Razor Pages + TagHelpers
 builder.Services.AddRazorPages();
 
-// Swagger (com título, descrição, enums como string)
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -47,6 +43,17 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.MapRazorPages(); // Razor Pages
+
+app.MapGet("/", () => Results.Ok(new
+    {
+        mensagem = "Bem-vindo à API LugiaWeather!",
+        versao = "v1",
+        documentacao = "/swagger"
+    }))
+    .WithName("BoasVindas")
+    .WithTags("Util")
+    .WithSummary("Endpoint inicial da API")
+    .WithDescription("Retorna uma mensagem de boas-vindas e o link da documentação Swagger.");
 
 app.MapDispositivoIotEndpoints(); // Endpoints de dispositivos
 app.MapLeituraEndpoints();        // Endpoints de leituras
