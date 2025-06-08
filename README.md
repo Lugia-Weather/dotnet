@@ -56,6 +56,12 @@ http://localhost:5114
 
 Você pode testar os endpoints diretamente pelo Swagger ou usando ferramentas como Postman, Insomnia ou curl.
 
+```
+http://localhost:5114/admin
+```
+
+Para acessar as Razor pages
+
 ---
 
 ## 🧪 Exemplos de Teste
