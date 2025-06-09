@@ -55,11 +55,6 @@ http://localhost:5114
 ```
 Você pode testar os endpoints diretamente pelo Swagger ou usando ferramentas como Postman, Insomnia ou curl.
 
-Para acessar a API em produção:
-```
-http://52.226.130.48:8081
-```
-
 Para acessar as Razor pages
 
 ```
