@@ -19,8 +19,8 @@ A LugiaWeather API oferece endpoints para:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/Lugia-Weather/.net.git
-   cd .net/lugiaweather-api
+   git clone https://github.com/Lugia-Weather/dotnet.git
+   cd dotnet/lugiaweather-api
    ```
 
 2. Restaure os pacotes e compile:
@@ -53,9 +53,13 @@ Após rodar o projeto, a API estará disponível em:
 ```
 http://localhost:5114
 ```
-
 Você pode testar os endpoints diretamente pelo Swagger ou usando ferramentas como Postman, Insomnia ou curl.
 
+Para acessar as Razor pages
+
+```
+http://localhost:5114/admin
+```
 ---
 
 ## 🧪 Exemplos de Teste
